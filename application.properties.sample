@@ -1,0 +1,12 @@
+# rename to application.properties
+spring.mvc.throw-exception-if-no-handler-found=true
+spring.jpa.hibernate.ddl-auto=create
+spring.datasource.url=jdbc:mysql://localhost:3306/watch_it_right
+spring.datasource.username=
+spring.datasource.password=
+spring.servlet.multipart.max-file-size=100Mb
+
+watchitright.jwt_key=
+watchitright.tmdb_api_key=
+watchitright.admin_username=admin
+watchitright.admin_password=admin

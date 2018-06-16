@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/WatchItRight.iml" filepath="$PROJECT_DIR$/WatchItRight.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/WatchItRight_main.iml" filepath="$PROJECT_DIR$/.idea/modules/WatchItRight_main.iml" group="WatchItRight" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/WatchItRight_test.iml" filepath="$PROJECT_DIR$/.idea/modules/WatchItRight_test.iml" group="WatchItRight" />
+    </modules>
+  </component>
+</project>

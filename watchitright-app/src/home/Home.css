@@ -1,0 +1,113 @@
+.Blurb {
+  padding: 1em;
+  margin: 0;
+  background-color: #e3ddd0;
+  background-image: url(../assets/cinema.jpg);
+  background-repeat: no-repeat;
+  background-position: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 33vh;
+}
+.Blurb:not(:first-child) {
+  border-top: 4px solid #aa1111;
+}
+
+.Blurb p,
+.Blurb li,
+.Blurb h2 {
+  width: fit-content;
+  text-shadow: #fff 0px 0px 3px;
+  padding: 0.2em;
+  z-index: 3;
+}
+
+.Blurb img {
+  max-width: 100%;
+  margin-top: 0.2em;
+  box-shadow: 2px 2px 9px 0px #ccc, -2px 2px 9px 0px #ccc;
+}
+
+.LoginSection {
+  padding: 1em;
+}
+
+.ScheduleBlurb,
+.SearchBlurb,
+.ExploreBlurb {
+  background-color: #fff;
+  background-repeat: no-repeat !important;
+}
+
+.ExploreBlurb,
+.SearchBlurb,
+.ScheduleBlurb {
+  background-image: none;
+}
+
+.QueryList {
+  padding: 5px;
+  background: rgba(255, 255, 255, 0.5);
+  margin: 0;
+  width: 100%;
+  margin-bottom: 1em;
+  border-collapse: collapse;
+}
+.QueryList td,
+.QueryList th {
+  padding: 0.2em 1em;
+}
+.QueryList td p {
+  margin: 0.1em 0;
+}
+
+.QueryList tr:not(:last-child) {
+  border-bottom: 1px solid #ddd;
+}
+.QueryList tr:hover {
+  background: rgba(240, 240, 240, 0.7);
+}
+
+.QueryList th {
+  padding: 8px 1em;
+  text-align: left;
+}
+
+.QueryList th {
+  background: #aa1111;
+  color: #f9f9f9;
+  font-weight: bold;
+}
+
+@media screen and (min-width: 700px) {
+  .Blurb,
+  .LoginSection {
+    padding: 3em;
+  }
+
+  .ExploreBlurb,
+  .ScheduleBlurb {
+    align-items: flex-end;
+    background-position: center left;
+    background-size: 40% auto;
+    background-position-x: 15px;
+    background-image: url(../assets/schedule.png);
+  }
+  .SearchBlurb {
+    background-position: center right;
+    background-size: 40%;
+    background-image: url(../assets/search.png);
+  }
+  .ExploreBlurb {
+    background-image: url(../assets/explore.png);
+  }
+  .Blurb > div {
+    width: 55%;
+    background: none;
+  }
+
+  .Blurb img {
+    display: none;
+  }
+}

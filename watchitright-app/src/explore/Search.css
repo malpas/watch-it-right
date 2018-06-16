@@ -1,0 +1,9 @@
+.SearchPage {
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.SearchInput {
+  box-sizing: border-box;
+  width: 100%;
+}

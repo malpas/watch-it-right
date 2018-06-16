@@ -1,0 +1,28 @@
+.Movie-col {
+  display: flex;
+  justify-content: center;
+}
+
+.Suggestion {
+  width: 50%;
+  align-items: center;
+  justify-content: center;
+}
+
+.Suggestion > div > button {
+  width: 100px;
+}
+.SuggestionWrapper {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.Suggestion > * {
+  flex-shrink: 0;
+}
+
+@media screen and (max-width: 600px) {
+  .Suggestion > div > button {
+    padding: 1em 0em;
+  }
+}

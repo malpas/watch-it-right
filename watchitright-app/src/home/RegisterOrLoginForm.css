@@ -1,0 +1,6 @@
+.FakeLink {
+  cursor: pointer;
+  font-weight: bold;
+  user-select: none;
+  max-width: 50%;
+}

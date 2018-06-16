@@ -1,0 +1,39 @@
+.fc-left h2 {
+  font-size: 20px;
+  color: #336699;
+}
+
+.fc-view {
+  border: none !important;
+  margin: 2em 0em;
+}
+
+.fc-list-empty {
+  padding: 0.2em;
+  display: block !important;
+}
+
+.fc-widget-header {
+  background: #aa1111 !important;
+  color: #fff;
+}
+.fc-button {
+  background: none !important;
+  border: 2px solid #222 !important;
+  border-radius: 0px !important;
+  color: #222 !important;
+  margin: 0.2em !important;
+}
+
+.fc-button:hover {
+  border-color: #777 !important;
+}
+.fc-button:active {
+  transition: color 0.3s ease;
+  transition: border-color 0.3s ease;
+  color: #aa1111 !important;
+  border-color: #aa1111 !important;
+}
+.fc-prev-button {
+  margin-right: 1px !important;
+}

@@ -1,0 +1,109 @@
+.TitleContainer {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: flex-start;
+  max-height: 5em;
+  padding: auto 2em;
+}
+
+.TitleContainer > h1 {
+  margin: 0;
+  padding: 0.5em;
+}
+
+.Hamburger {
+  position: absolute;
+  top: 0.5em;
+  right: 1em;
+  color: #333;
+  text-decoration: none;
+  order: 999;
+}
+
+.NavLinks {
+  width: 100vw;
+  display: flex;
+  flex-flow: column nowrap;
+  padding: 0;
+  margin: 0;
+}
+
+.hideMobile {
+  visibility: hidden;
+}
+.hideDesktop {
+  visibility: visible;
+}
+
+.DesktopBar {
+  margin-right: 1em;
+  display: none;
+}
+
+.DesktopBar > a {
+  padding: 0.5em;
+  color: #333;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+.DesktopBar > a:hover {
+  color: #ff9999;
+  text-decoration: none;
+}
+
+.DesktopBar > a:active {
+  text-shadow: 1px 1px;
+}
+
+@media screen and (min-width: 700px) {
+  .NavBar {
+    display: flex;
+  }
+
+  .hideMobile {
+    visibility: visible;
+  }
+  .hideDesktop {
+    visibility: hidden;
+  }
+
+  .DesktopBar {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-flow: row nowrap;
+  }
+  .DesktopBar a {
+    margin-right: 1em;
+    padding: 0 !important;
+  }
+
+  .Hamburger {
+    position: relative;
+    top: auto;
+    right: auto;
+    padding: 0 !important;
+  }
+
+  .TitleContainer {
+    flex-direction: row;
+    align-items: center;
+    padding: 1em 3em;
+    justify-content: space-between;
+  }
+  .TitleContainer h1,
+  .TitleContainer a {
+    padding: 0.4em 0 0 0;
+  }
+  .NavLinks {
+    width: 100%;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+
+  .Logo {
+    user-select: none;
+    cursor: pointer;
+  }
+}

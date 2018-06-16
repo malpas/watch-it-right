@@ -1,0 +1,22 @@
+.MovieGrid {
+  display: flex;
+  flex-flow: column wrap;
+  margin-top: 1em;
+  grid-gap: 0.3em;
+  align-content: center;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opactity: 1;
+  }
+}
+
+@media screen and (min-width: 500px) {
+  .MovieGrid {
+    flex-direction: row;
+  }
+}

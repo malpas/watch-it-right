@@ -1,0 +1,130 @@
+main {
+  display: flex;
+  flex-flow: column nowrap;
+  min-height: 100vh;
+}
+
+main > * {
+  flex: 1;
+}
+
+.Content {
+  padding: 1em 1em;
+}
+body {
+  font-family: "Questrial", sans-serif;
+  font-size: 16px;
+}
+
+h1,
+h2 {
+  font-family: "Alfa Slab One", cursive;
+  color: #aa1111;
+}
+
+h3 {
+  font-family: "Alfa Slab One", cursive;
+  color: #336699;
+}
+
+input[type="text"],
+input[type="password"] {
+  border: 2px solid #222;
+  color: #222;
+  background: #fcfcfc;
+  padding: 0.5em;
+  transition: box-shadow 0.6s ease;
+  box-shadow: 2px 2px transparent;
+  margin: 0.2em;
+}
+
+input[type="text"]:hover,
+input[type="password"]:hover {
+  border-color: #777;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+  border-color: #aa1111;
+  transition: box-shadow 0.3s ease;
+  box-shadow: 2px 2px #d3aaee;
+}
+
+input[type="text"]::placeholder,
+input[type="password"]::placeholder {
+  color: #999;
+}
+
+input[type="submit"],
+button {
+  padding: 0.5em;
+  border: 2px solid #222;
+  font-weight: bold;
+  background: none;
+  margin: 0.2em;
+}
+
+input[type="submit"]:hover,
+button:hover {
+  border-color: #999;
+  cursor: pointer;
+}
+
+input[type="submit"]:active,
+button:active {
+  transition: color 0.3s ease;
+  transition: border-color 0.3s ease;
+  color: #aa1111;
+  border-color: #aa1111;
+}
+
+form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.responsive-cols {
+  display: flex;
+  flex-flow: column nowrap;
+}
+.cols {
+  display: flex;
+  flex-flow: row nowrap;
+}
+.col {
+  flex: 1;
+}
+
+.ErrorMessage {
+  color: #aa0000;
+  margin: 1em 0 0 0;
+}
+
+.Form {
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+@media screen and (min-width: 600px) {
+  .responsive-cols {
+    flex-direction: row;
+  }
+
+  .col:not(:last-child) {
+    padding-right: 1em;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .Content {
+    padding: 1em 3em;
+    width: 80%;
+    align-self: center;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .Form {
+    flex-flow: row nowrap;
+  }
+}

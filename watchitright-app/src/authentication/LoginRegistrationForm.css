@@ -1,0 +1,9 @@
+.LoginRegistrationForm {
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.LoginRegistrationInputs {
+  display: flex;
+  flex-flow: column nowrap;
+}

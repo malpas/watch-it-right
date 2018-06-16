@@ -1,0 +1,88 @@
+<!doctype html>
+<html xmlns:th="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>Watch It Right (Admin)</title>
+        <style type="text/css">
+            html, body {
+                height: 100%;
+                overflow: hidden;
+            }
+            body {
+                background: #eee;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            main {
+                background: #fff;
+                padding: 2em;
+            }
+            form {
+                display: flex;
+                flex-flow: column nowrap;
+            }
+
+            div {
+                display: flex;
+                flex-flow: row nowrap;
+            }
+            input, label, p, a {
+                margin: 0.5em 0em;
+                flex: 1;
+            }
+
+            label {
+                font-weight: bold;
+            }
+        </style>
+    </head>
+    <body>
+        <main>
+            <h1>Admin Dashboard</h1>
+            <a href="/">Back</a>
+            <p th:text="'Movies: ' + ${movieCount}"/>
+            <form method="post" action="/admin/upload" enctype="multipart/form-data">
+                <div>
+                <label for="file">File: </label>
+                <input type="file" id="file" name="file">
+                </div>
+                <div>
+                <label for="titleHeader">Title Header: </label>
+                <input type="input" id="titleHeader" name="titleHeader"
+                       placeholder="title" value="title">
+                </div>
+                <div>
+                <label for="yearHeader">Release Date Header: </label>
+                <input type="input" id="yearHeader" name="yearHeader"
+                       placeholder="year" value="release_date">
+                </div>
+                <div>
+                <label for="descriptionHeader">Description Header: </label>
+                <input type="input" id="descriptionHeader" name="descriptionHeader"
+                       placeholder="overview" value="overview">
+                </div>
+                <div>
+                    <label for="runtimeHeader">Runtime Header: </label>
+                    <input type="input" id="runtimeHeader" name="runtimeHeader"
+                           placeholder="runtime" value="runtime">
+                </div>
+                <div>
+                    <label for="runtimeHeader">Genres Header: </label>
+                    <input type="input" id="genreHeader" name="genreHeader"
+                           placeholder="genres" value="genres">
+                </div>
+                <div>
+                <p>Note: genres should be given in the format <strong>[{name:
+                    "Action"}, {name: "Romance"}]</strong>, etc. This is the
+                standard TMDB format.</p>
+                </div>
+                <div>
+                <label for="dateFormat">Date Format: </label>
+                <input type="input" id="dateFormat" name="dateFormat"
+                       placeholder="yyyy-MM-dd" value="yyyy-MM-dd">
+                </div>
+                <input type="submit" value="Upload Movie Data (CSV)"/>
+            </form>
+        </main>
+    </body>
+</html>
